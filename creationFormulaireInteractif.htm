@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fichierCSS.css" />
+    <script src="formulaire.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id = 'exo'>
+        <form name="RegForm" id = 'formulaire'>
+            <fieldset id="fiedl">
+                <legend>Quel est votre sexe? </a><abbr title="obligatoire">* <a id="page"></abbr></legend>
+            <label><input id = 'masculin' type="radio" name="check"  value="1"  /> Masculin </label>
+                <label><input id = 'feminin' type="radio" name="check"  value="2" /> Feminin</label><br />
+            </fieldset>
+
+                <br>
+            
+            <a id="page1">  </a><label for="nom">Nom *</label><br>
+            <input id = 'nom' type="text"  minlength="2" size="45" ><br><br>
+            <a id="page2">  </a><label for="prenom">Prénom *</label><br>
+            <input id = 'prenom' type="text"  minlength="2" size="45" value=""><br><br>
+            <a id="page3">  </a><label for="age">Âge *</label><br>
+            <input id = 'age' type="number" size="10" value=""><br><br>
+            <a id="page4"> </a><label for="pseudo">Pseudo *</label><br>
+            <input id = 'pseudo' type="text" size="45" minlength="4"  value=""><br><br>
+            
+            <a id="page5"> </a><label for="motDePasse">Mot de passe *</label><br>
+            <input id = 'motDePasse' type="password" size="45"  value=""><br><br>
+            <a id="page6"> </a><label for="ConfrirMotDePasse">Confirmation de Mot de passe *</label><br>
+            <input id = 'ConfrirMotDePasse' type="password"  size="45" value=""><br><br>
+            <a id="page7"> </a><label for="pays">Pays *</label>
+            <select id = 'pays' type="select" name="choisir un pays"  value="">
+               <option id="options">choisir un pays</option>
+               <option>Allemagne</option>
+               <option>France</option>
+               <option>Etats-Unis</option>
+               <option>Autriche</option>
+               <option>Italie</option> <option>Cameroun</option> <option>Senegal</option> <option>canada</option>
+            </select><br><br>
+            <label>Souhaitez-vous recevoir des mails? <input id = 'mail' type="checkbox" ></label><br><br>
+            <input id="soumettre" type="button" class="button" value="Envoyer">
+            <input id= 'recommencer' type="reset">
+
+        </form>
+        <div id="alert"></div>
+    </div>
+    
+</body>
+</html>
