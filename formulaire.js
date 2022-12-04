@@ -113,5 +113,8 @@
             };
     },false)
      
+recommecer.addEventListener('click', function(e){
+      alert.innerHTML = " ";
+  })
 
    
